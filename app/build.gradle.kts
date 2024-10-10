@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.emrehayat.bestmovies"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.emrehayat.bestmovies"

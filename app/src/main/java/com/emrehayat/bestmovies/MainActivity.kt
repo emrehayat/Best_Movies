@@ -27,13 +27,19 @@ class MainActivity : AppCompatActivity() {
         val karaSovalye = BestMovies("Kara Şövalye", "IMDB: 9.0", R.drawable.karasovalye)
         val baba2 = BestMovies("Baba 2", "IMDB: 9.0", R.drawable.baba2)
         val onIkiOfkeliAdam = BestMovies("12 Öfkeli Adam", "IMDB: 9.0", R.drawable.onikiofkeliadam)
-        val schindlerinListesi = BestMovies("Schindler'in Listesi", "IMDB: 9.0", R.drawable.schindlerinlistesi)
         val yuzuklerinEfendisiKralinDonusu = BestMovies("Yüzüklerin Efendisi: Kralın Dönüşü", "IMDB: 9.0", R.drawable.yuzuklerinefendisikralindonusu)
+        val schindlerinListesi = BestMovies("Schindler'in Listesi", "IMDB: 9.0", R.drawable.schindlerinlistesi)
         val ucuzRoman = BestMovies("Ucuz Roman", "IMDB: 8.9", R.drawable.ucuzroman)
         val yuzuklerinEfendisiYuzukKardesligi = BestMovies("Yüzüklerin Efendisi: Yüzük Kardeşliği", "IMDB: 8.9", R.drawable.yuzuklerinefendisiyuzukkardesligi)
         val iyiKotuVeCirkin = BestMovies("İyi, Kötü ve Çirkin", "IMDB: 8.8", R.drawable.iyikotuvecirkin)
+        val forrestGump = BestMovies("Forrest Gump", "IMDB: 8.8", R.drawable.forrestgump)
+        val yuzuklerinEfendisiIkiKule = BestMovies("Yüzüklerin Efendisi: İki Kule", "IMDB: 8.8", R.drawable.yuzuklerinefendisiikikule)
+        val dovusKulubu = BestMovies("Dövüş Kulübü", "IMDB: 8.8", R.drawable.dovuskulubu)
+        val baslangic = BestMovies("Başlangıç", "IMDB: 8.8", R.drawable.baslangic)
+        val yildizSavaslariImparator = BestMovies("Yıldız Savaşları: İmparator", "IMDB: 8.7", R.drawable.yildizsavaslariimparator)
 
-        val bestMoviesList = arrayListOf(esaretinBedeli, baba, karaSovalye, baba2, onIkiOfkeliAdam, schindlerinListesi, yuzuklerinEfendisiKralinDonusu, ucuzRoman, yuzuklerinEfendisiYuzukKardesligi, iyiKotuVeCirkin)
+        val bestMoviesList = arrayListOf(esaretinBedeli, baba, karaSovalye, baba2, onIkiOfkeliAdam, yuzuklerinEfendisiKralinDonusu, schindlerinListesi, ucuzRoman, yuzuklerinEfendisiYuzukKardesligi, iyiKotuVeCirkin,
+            forrestGump, yuzuklerinEfendisiIkiKule, dovusKulubu, baslangic, yildizSavaslariImparator)
 
         val adapter = BestMoviesAdapter(bestMoviesList)
         binding.bestMoviesRecyclerView.layoutManager = LinearLayoutManager(this)

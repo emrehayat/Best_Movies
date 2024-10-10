@@ -20,6 +20,8 @@ class BestMoviesAdapter(val bestMoviesList: ArrayList<BestMovies>) : RecyclerVie
     override fun onBindViewHolder(holder: BestMoviesAdapter.BestMoviesViewHolder, position: Int) {
         holder.binding.textViewRecyclerView.text = bestMoviesList[position].isim
 
+        holder.binding.rankTextView.text = (position + 1).toString()
+
         holder.itemView.setOnClickListener {
             val intent = Intent(holder.itemView.context,IntroductionActivity::class.java)
             intent.putExtra("secilenFilm", bestMoviesList[position])
